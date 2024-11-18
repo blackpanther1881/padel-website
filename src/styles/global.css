@@ -1,0 +1,170 @@
+
+
+.icon-footer-icon {
+    fill: #787878;
+    width: 24px;
+    height: auto;
+}
+.icon-footer-icon-large {
+    fill: #787878;
+    width: 100px;
+    height: auto;
+}
+
+/*.hero-content{*/
+/*    cursor: url('/images/padel.svg'), auto;*/
+/*}*/
+
+/* styles/animations.css */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.bounce {
+    animation: bounce 1.5s infinite;
+}
+
+.hoverEffect:hover {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.ball {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: #c9f364;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+
+}
+.ball:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    box-sizing: border-box;
+    background: transparent;
+    left: -65%;
+}
+.ball:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    box-sizing: border-box;
+    background: transparent;
+    right: -65%;
+
+}
+
+
+.hero-body{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: linear-gradient(to bottom, #87ceeb, #6b8e23); /* Sky to grass */
+        overflow: hidden;
+    }
+
+    .court {
+        position: relative;
+        width: 600px;
+        height: 400px;
+        background: #fff;
+        border: 2px solid #000;
+        border-radius: 10px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        overflow: hidden;
+    }
+
+    /* Balls */
+    .ball {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background: radial-gradient(circle, #ff4500 50%, #b22222 90%);
+        border-radius: 50%;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        animation: ball-bounce 3s ease-in-out infinite;
+    }
+
+    .ball-1 {
+        top: 10%;
+        left: 10%;
+        animation-delay: 0s;
+    }
+
+    .ball-2 {
+        top: 50%;
+        left: 50%;
+        animation-delay: 1s;
+    }
+
+    /* Racket */
+    .racket {
+        position: absolute;
+        bottom: 10%;
+        left: 75%;
+        width: 15px;
+        height: 120px;
+        background: #333;
+        border-radius: 5px;
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+        transform-origin: top center;
+        animation: racket-swing 3s infinite;
+    }
+
+    .racket:before {
+        content: "";
+        position: absolute;
+        top: 10px;
+        left: -40px;
+        width: 100px;
+        height: 100px;
+        border: 5px solid #333;
+        border-radius: 50%;
+    }
+
+    /* Ball Animation */
+    @keyframes ball-bounce {
+        0%, 100% {
+            top: 10%;
+            left: 10%;
+        }
+        50% {
+            top: 80%;
+            left: 40%;
+        }
+    }
+
+    /* Racket Animation */
+    @keyframes racket-swing {
+        0%, 100% {
+            transform: rotate(0deg);
+        }
+        50% {
+            transform: rotate(-30deg);
+        }
+    }
