@@ -56,7 +56,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
     useEffect(() => {
         const interval = setInterval(() => {
             setBalls((prev) => {
-                if (prev.length < 9) {
+                if (prev.length < 5) {
                     return [...prev, prev.length];
                 }
                 return prev; // Stop adding balls if the count reaches 5

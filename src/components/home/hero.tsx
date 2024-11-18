@@ -113,11 +113,15 @@ const Hero = () => {
             position="relative"
             overflow="hidden"
             w="100vw"
-            h="100vh"
+            h={{
+                base: "100%", // 0-48em
+                lg: "100vh", // 48em-80em,
+            }}
             // display={"flex"}
             // justifyContent={"center"}
             // alignItems={"center"}
             maxW={"1440px"}
+            px={{ base: "20px", md: "30px" }}
             mx={"auto"}
         >
             <Box opacity={"0.4"}>
@@ -127,14 +131,14 @@ const Hero = () => {
             </Box>
 
             <VStack pt={"202px"} zIndex={1}>
-                <HStack justify="center" alignItems="center" gap={"24px"}>
-                    <Heading as="h1" fontSize={"80px"} fontWeight={"400"}>
+                <HStack justify="center" alignItems="center" gap={{base:"16px", lg:"24px"}} mb={{base:"20px", lg:"0"}} flexDirection={{base:"column", lg:"row"}}>
+                    <Heading as="h1" fontSize={{base:"50px", lg:"80px"}} fontWeight={"400"}>
                         PADEL
                     </Heading>
                     <Text fontSize={"30px"}>but make it</Text>
-                    <Heading as="h1" fontSize={"80px"} fontWeight={"400"}>
-                        <Flex position={"relative"}>
-                            <Heading as="h1" fontSize={"80px"} fontWeight={"400"}>
+                    <Heading as="h1"  fontSize={{base:"50px", lg:"80px"}} fontWeight={"400"}>
+                        <Flex position={"relative"} >
+                            <Heading as="h1"  fontSize={{base:"50px", lg:"80px"}} fontWeight={"400"}>
                                 CRYPT
                             </Heading>
                             <Box

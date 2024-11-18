@@ -69,7 +69,7 @@ const Meme = () => {
         pt={{ base: "30px", md: "50px" }}
       >
         <HStack justify="center" alignItems="center" gap="24px">
-          <Box>
+          <Box display={{base:"none", lg:"block"}}>
             <Image
               src={"/images/memes/meme.svg"}
               alt={"meme"}
@@ -106,7 +106,7 @@ const Meme = () => {
               taking this sport from hidden gem to mainstream fire.
             </Text>
           </Box>
-          <Box>
+          <Box display={{base:"none", lg:"block"}}>
             <Image
               src={"/images/memes/meme.svg"}
               alt={"meme"}
