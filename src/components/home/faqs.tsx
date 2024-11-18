@@ -26,7 +26,8 @@ const faqs = [
 
 const Faqs = () => {
   return (
-    <Box borderBottom={"1px solid #000"}>
+    <Box className={"aos-init aos-animate"}
+         data-aos="fade-up"  id={"faq"}>
       <Box bg="#D6D6D6">
         <Container
           maxW={"1300px"}

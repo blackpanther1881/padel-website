@@ -23,9 +23,9 @@ const footerSocialLinks = [
     color: "#000000"
   },
   {
-    name: "Discord",
-    link: "https://discord.persistence.one/",
-    icon: "discord",
+    name: "Youtube",
+    link: "/",
+    icon: "youtube",
     iconType: "stroke",
     color: "#767EF0"
   },
@@ -33,20 +33,29 @@ const footerSocialLinks = [
     name: "Telegram",
     link: "https://t.me/persistenceone",
     icon: "telegram",
-    iconType: "stroke",
+    iconType: "fill",
     color: "#418FCD"
   },
   {
-    name: "Medium",
-    link: "https://medium.com/persistence-blog",
-    icon: "medium",
+    name: "Instgram",
+    link: "",
+    icon: "insta",
     iconType: "stroke",
+    color: "#000000"
+  },
+  {
+    name: "Tiktok",
+    link: "",
+    icon: "tiktok",
+    iconType: "fill",
     color: "#000000"
   }
 ];
+
 const Rebel = () => {
   return (
-    <Box pos="relative" borderBottom={"1px solid #000"}>
+    <Box pos={"relative"} className={"aos-init aos-animate"}
+         data-aos="fade-up"  id={"rebel"}>
       <Container
         maxW={"1300px"}
         mx={"auto"}
@@ -117,7 +126,7 @@ const Rebel = () => {
           display={{ base: "none", md: "flex" }}
           border={"1px solid #161616"}
           borderRadius={"40px"}
-          maxWidth={"190px"}
+          maxWidth={"228px"}
           mx={"auto"}
           py={"12px"}
           px={"21px"}

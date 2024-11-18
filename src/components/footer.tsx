@@ -18,9 +18,9 @@ const footerSocialLinks = [
     color: "#000000"
   },
   {
-    name: "Discord",
-    link: "https://discord.persistence.one/",
-    icon: "discord",
+    name: "Youtube",
+    link: "/",
+    icon: "youtube",
     iconType: "stroke",
     color: "#767EF0"
   },
@@ -28,21 +28,29 @@ const footerSocialLinks = [
     name: "Telegram",
     link: "https://t.me/persistenceone",
     icon: "telegram",
-    iconType: "stroke",
+    iconType: "fill",
     color: "#418FCD"
   },
   {
-    name: "Medium",
-    link: "https://medium.com/persistence-blog",
-    icon: "medium",
+    name: "Instgram",
+    link: "",
+    icon: "insta",
     iconType: "stroke",
+    color: "#000000"
+  },
+  {
+    name: "Tiktok",
+    link: "",
+    icon: "tiktok",
+    iconType: "fill",
     color: "#000000"
   }
 ];
 
 export default function Footer() {
   return (
-    <Box pos="relative">
+    <Box className={"aos-init aos-animate"}
+         data-aos="fade-up"  pos="relative" id={"footer"}>
       <Container
         maxW={"1300px"}
         mx={"auto"}

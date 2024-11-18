@@ -42,7 +42,8 @@ const roadMap = [
 ];
 const RoadMap = () => {
   return (
-    <Box pos="relative" borderBottom={"1px solid #000"}>
+    <Box pos="relative" className={"aos-init aos-animate"}
+         data-aos="fade-up"  id={"roadmap"}>
       <Container
         maxW={"1300px"}
         mx={"auto"}

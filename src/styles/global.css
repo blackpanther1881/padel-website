@@ -1,6 +1,7 @@
 
 
-body{
+html, body{
+    scroll-behavior: smooth;
     cursor: url('/images/padel.svg'), auto;
 }
 
@@ -10,15 +11,23 @@ button:hover, a:hover {
 }
 
 .icon-footer-icon {
-    fill: #787878;
     width: 24px;
     height: auto;
 }
 .icon-footer-icon-large {
     fill: #787878;
-    width: 100px;
+    width: 70px;
     height: auto;
 }
+
+.icon-footer-icon.stroke, .icon-footer-icon-large.stroke{
+    fill: transparent;
+    stroke: #000000;
+}
+.icon-footer-icon.fill, .icon-footer-icon-large.fill{
+    fill: #000000;
+}
+
 
 
 /* styles/animations.css */

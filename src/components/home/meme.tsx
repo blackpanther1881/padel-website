@@ -56,7 +56,11 @@ const memeList = [
 ];
 const Meme = () => {
   return (
-    <Box pos="relative" borderBottom={"1px solid #000"}>
+    <Box pos="relative"
+         className={"aos-init aos-animate"}
+         data-aos="fade-up"
+         id={"meme"}
+    >
       <Container
         maxW={"1300px"}
         mx={"auto"}
