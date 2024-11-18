@@ -11,9 +11,9 @@
     height: auto;
 }
 
-/*.hero-content{*/
-/*    cursor: url('/images/padel.svg'), auto;*/
-/*}*/
+.hero-content{
+    cursor: url('/images/padel.svg'), auto;
+}
 
 /* styles/animations.css */
 @keyframes bounce {
