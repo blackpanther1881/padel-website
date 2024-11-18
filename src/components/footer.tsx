@@ -84,6 +84,7 @@ export default function Footer() {
           mx={"auto"}
           px={"21px"}
           pb={"100px"}
+          flexWrap={"wrap"}
         >
           {footerSocialLinks.map((link) => (
             <Link
@@ -94,8 +95,8 @@ export default function Footer() {
               aria-label={link.name}
             >
               <Box
-                height={"120px"}
-                width={"120px"}
+                height={{base:"60px", lg: "120px"}}
+                width={{base:"60px", lg:"120px"}}
                 style={{
                   display: "flex",
                   justifyContent: "center",

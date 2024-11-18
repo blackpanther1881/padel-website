@@ -71,7 +71,7 @@ const Rebel = () => {
               mx={"auto"}
               fontWeight={700}
               textAlign={"center"}
-              mb={"-24px"}
+              mb={{base:"0", lg:"-24px"}}
             >
               ARE YOU A
             </Text>
@@ -79,7 +79,7 @@ const Rebel = () => {
               textAlign={"center"}
               textTransform={"uppercase"}
               fontSize={{ base: "26px", xl: "70px" }}
-              mb={"-30px"}
+
               lineHeight={{ base: "32px", xl: "100px" }}
             >
               $PADEL

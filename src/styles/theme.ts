@@ -3,18 +3,19 @@ import Button from "./button";
 
 const theme = extendTheme({
   colors: {
+    primary: "#D9E021",
     brand: {
       blue: "#0A74DA",
-      orange: "#FFA500"
-    }
+      orange: "#FFA500",
+    },
   },
   fonts: {
     heading: "'Protest Strike', serif", // Set the font for headings
-    body: "'Comic Neue', sans-serif" // Set the font for body text
+    body: "'Comic Neue', sans-serif", // Set the font for body text
   },
   components: {
-    Button
-  }
+    Button,
+  },
 });
 
 export default theme;

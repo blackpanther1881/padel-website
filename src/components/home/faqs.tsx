@@ -57,6 +57,7 @@ const Faqs = () => {
           display={"flex"}
           maxWidth={"1200px"}
           flexWrap={"wrap"}
+          justifyContent={"center"}
           mx={"auto"}
         >
           {faqs.map((faq, key) => (

@@ -64,6 +64,7 @@ const RoadMap = () => {
         <HStack
           gap={"30px"}
           display={"flex"}
+          justifyContent={"center"}
           maxWidth={"640px"}
           flexWrap={"wrap"}
           mx={"auto"}
