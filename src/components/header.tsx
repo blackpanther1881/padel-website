@@ -1,5 +1,6 @@
 import { Box, Flex, Text, Link, HStack, Button } from "@chakra-ui/react";
 import Image from "next/image";
+import {TELEGRAM_LINK} from "../utils/config";
 
 export default function Header() {
   return (
@@ -21,7 +22,9 @@ export default function Header() {
           <Link href="#faq" px={4}>
             Faq
           </Link>
-          <Button variant={"primary"}>Join the FAM</Button>
+          <Link href={TELEGRAM_LINK} target="_blank">
+            <Button variant={"primary"}>Join the FAM</Button>
+          </Link>
         </HStack>
       </Flex>
     </Box>

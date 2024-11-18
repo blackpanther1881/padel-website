@@ -9,6 +9,7 @@ import {
     Heading, Link, Flex
 } from "@chakra-ui/react";
 import { keyframes } from "@emotion/react";
+import {TELEGRAM_LINK} from "../../utils/config";
 
 const ballBounce = keyframes`
     0% { transform: translateY(0); }
@@ -172,7 +173,7 @@ const Hero = () => {
                 </Text>
                 <Box position="relative" display="inline-block">
                     <Link
-                        href="/"
+                        href={TELEGRAM_LINK}
                         target="_black"
                         rel="noopenner noreferrer"
                         className={"inline-block"}

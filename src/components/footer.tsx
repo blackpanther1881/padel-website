@@ -8,39 +8,40 @@ import {
   HStack
 } from "@chakra-ui/react";
 import Icon from "./elements/Icon";
+import {TELEGRAM_LINK} from "../utils/config";
 
 const footerSocialLinks = [
   {
     name: "Twitter",
-    link: "https://twitter.com/PersistenceOne",
+    link: TELEGRAM_LINK,
     icon: "twitter",
     iconType: "stroke",
     color: "#000000"
   },
   {
     name: "Youtube",
-    link: "/",
+    link: TELEGRAM_LINK,
     icon: "youtube",
     iconType: "stroke",
     color: "#767EF0"
   },
   {
     name: "Telegram",
-    link: "https://t.me/persistenceone",
+    link: TELEGRAM_LINK,
     icon: "telegram",
     iconType: "fill",
     color: "#418FCD"
   },
   {
     name: "Instgram",
-    link: "",
+    link: TELEGRAM_LINK,
     icon: "insta",
     iconType: "stroke",
     color: "#000000"
   },
   {
     name: "Tiktok",
-    link: "",
+    link: TELEGRAM_LINK,
     icon: "tiktok",
     iconType: "fill",
     color: "#000000"
