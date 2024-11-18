@@ -99,16 +99,16 @@
         overflow: hidden;
     }
 
-    /* Balls */
-    .ball {
-        position: absolute;
-        width: 20px;
-        height: 20px;
-        background: radial-gradient(circle, #ff4500 50%, #b22222 90%);
-        border-radius: 50%;
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-        animation: ball-bounce 3s ease-in-out infinite;
-    }
+    /*!* Balls *!*/
+    /*.ball {*/
+    /*    position: absolute;*/
+    /*    width: 20px;*/
+    /*    height: 20px;*/
+    /*    background: radial-gradient(circle, #ff4500 50%, #b22222 90%);*/
+    /*    border-radius: 50%;*/
+    /*    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);*/
+    /*    animation: ball-bounce 3s ease-in-out infinite;*/
+    /*}*/
 
     .ball-1 {
         top: 10%;
