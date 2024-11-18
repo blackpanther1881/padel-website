@@ -4,6 +4,11 @@ body{
     cursor: url('/images/padel.svg'), auto;
 }
 
+button:hover, a:hover {
+    transform: scale(1.1); /* Scale effect */
+    cursor: url('/images/padel.svg'), auto;
+}
+
 .icon-footer-icon {
     fill: #787878;
     width: 24px;

@@ -111,29 +111,29 @@ const Hero = () => {
                             rel="noopenner noreferrer"
                             className={"inline-block"}
                         >
-                        <Button
-                            variant={"primary"}
-                            overflow={"hidden"}
-                            position="relative"
-                            w="200px"
-                            h="50px"
-                            onMouseMove={handleMouseMove}
-                            onMouseEnter={() => setShowBall(true)}
-                            onMouseLeave={() => setShowBall(false)}
-                        >
-                            Join the FAM
-                            {showBall && (
-                                <Box
-                                    position="absolute"
-                                    w="20px"
-                                    h="20px"
-                                    className={"ball"}
-                                    left={`${ballPosition.x}px`}
-                                    top={`${ballPosition.y}px`}
-                                    pointerEvents="none"
-                                />
-                            )}
-                        </Button>
+                            <Button
+                                variant={"primary"}
+                                overflow={"hidden"}
+                                position="relative"
+                                w="200px"
+                                h="50px"
+                                onMouseMove={handleMouseMove}
+                                onMouseEnter={() => setShowBall(true)}
+                                onMouseLeave={() => setShowBall(false)}
+                            >
+                                Join the FAM
+                                {showBall && (
+                                    <Box
+                                        position="absolute"
+                                        w="20px"
+                                        h="20px"
+                                        className={"ball"}
+                                        left={`${ballPosition.x}px`}
+                                        top={`${ballPosition.y}px`}
+                                        pointerEvents="none"
+                                    />
+                                )}
+                            </Button>
                         </Link>
                     </Box>
                 </VStack>
