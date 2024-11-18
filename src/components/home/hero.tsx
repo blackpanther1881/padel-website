@@ -113,14 +113,18 @@ const Hero = () => {
             position="relative"
             overflow="hidden"
             w="100vw"
-            h={{
-                base: "100%", // 0-48em
-                lg: "100vh", // 48em-80em,
-            }}
             // display={"flex"}
             // justifyContent={"center"}
             // alignItems={"center"}
             maxW={"1440px"}
+            maxH={{
+                base: "100vh", // 0-48em
+                "2xl": "700px"
+            }}
+            h={{
+                base: "100%", // 0-48em
+                lg: "100vh", // 48em-80em,
+            }}
             px={{ base: "20px", md: "30px" }}
             mx={"auto"}
         >
@@ -130,7 +134,7 @@ const Hero = () => {
                 ))}
             </Box>
 
-            <VStack pt={"202px"} zIndex={1}>
+            <VStack pt={{base:"202px", xl:"300px"}} zIndex={1}>
                 <HStack justify="center" alignItems="center" gap={{base:"16px", lg:"24px"}} mb={{base:"20px", lg:"0"}} flexDirection={{base:"column", lg:"row"}}>
                     <Heading as="h1" fontSize={{base:"50px", lg:"80px"}} fontWeight={"400"}>
                         PADEL
