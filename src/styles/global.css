@@ -1,5 +1,9 @@
 
 
+body{
+    cursor: url('/images/padel.svg'), auto;
+}
+
 .icon-footer-icon {
     fill: #787878;
     width: 24px;
@@ -11,9 +15,6 @@
     height: auto;
 }
 
-.hero-content{
-    cursor: url('/images/padel.svg'), auto;
-}
 
 /* styles/animations.css */
 @keyframes bounce {
