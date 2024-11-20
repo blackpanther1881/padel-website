@@ -66,8 +66,8 @@ const Ball = () => {
     <Box
       ref={ballRef}
       position="absolute"
-      w="30px"
-      h="30px"
+      w="40px"
+      h="40px"
       className={"ball"}
     />
     // <Box
@@ -139,7 +139,7 @@ const Hero = () => {
       pb={{ base: "60px", lg: "0" }}
       mx={"auto"}
     >
-      <Box opacity={"0.4"}>
+      <Box opacity={"0.6"}>
         {balls.map((id) => (
           <Ball key={id} />
         ))}
