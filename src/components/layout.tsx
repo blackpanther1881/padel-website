@@ -12,28 +12,36 @@ const Ball = () => {
   });
 
   const updatePosition = () => {
+    const documentWidth = document.body.scrollWidth;
+    const documentHeight = document.body.scrollHeight;
+
+    // Get the footer element by its ID
+    const footer = document.getElementById("footer");
+    // @ts-ignore
+    const footerTop =
+      footer?.getBoundingClientRect().bottom + window.scrollY ?? documentHeight;
+
+    // Adjust Y-boundary to stop at the footer's top
+    const maxY = footerTop - 40; // Subtract ball height (40px)
+
     // Update position based on velocity
     positionRef.current.x += velocityRef.current.x;
     positionRef.current.y += velocityRef.current.y;
 
-    // Reverse direction on X-axis when hitting screen edges
+    // Reverse direction on X-axis when hitting edges
     if (
       positionRef.current.x <= 0 ||
-      positionRef.current.x >= window.innerWidth - 30
+      positionRef.current.x >= documentWidth - 40
     ) {
       velocityRef.current.x = -velocityRef.current.x;
     }
 
-    // Reverse direction on Y-axis when hitting top or bottom of the document
-    const documentHeight = document.documentElement.scrollHeight;
-    if (
-      positionRef.current.y <= 0 ||
-      positionRef.current.y >= documentHeight - 30
-    ) {
+    // Reverse direction on Y-axis when hitting top or max Y-boundary
+    if (positionRef.current.y <= 0 || positionRef.current.y >= maxY) {
       velocityRef.current.y = -velocityRef.current.y;
     }
 
-    // Apply the new position to the ball element
+    // Apply the new position to the ball
     if (ballRef.current) {
       ballRef.current.style.transform = `translate(${positionRef.current.x}px, ${positionRef.current.y}px)`;
     }
@@ -75,7 +83,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
     return () => clearInterval(interval);
   }, []);
   return (
-    <Box height={"100%"}>
+    <Box height={"100%"} position="relative">
       <Box opacity={"0.6"}>
         {balls.map((id) => (
           <Ball key={id} />
