@@ -18,8 +18,9 @@ const Ball = () => {
     // Get the footer element by its ID
     const footer = document.getElementById("footer");
     // @ts-ignore
-    const footerTop =
-      footer?.getBoundingClientRect().bottom + window.scrollY ?? documentHeight;
+    const footerTop = footer
+      ? footer.getBoundingClientRect().bottom + window.scrollY
+      : documentHeight;
 
     // Adjust Y-boundary to stop at the footer's top
     const maxY = footerTop - 40; // Subtract ball height (40px)
