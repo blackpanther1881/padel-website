@@ -8,58 +8,59 @@ import {
   VStack,
   Heading,
   Container,
-  Flex
+  Flex,
 } from "@chakra-ui/react";
 import Image from "next/image";
 
 const memeList = [
   {
     image: "/images/memes/meme.svg",
-    link: "/"
+    link: "/",
   },
   {
     image: "/images/memes/meme.svg",
-    link: "/"
+    link: "/",
   },
   {
     image: "/images/memes/meme.svg",
-    link: "/"
+    link: "/",
   },
   {
     image: "/images/memes/meme.svg",
-    link: "/"
+    link: "/",
   },
   {
     image: "/images/memes/meme.svg",
-    link: "/"
+    link: "/",
   },
   {
     image: "/images/memes/meme.svg",
-    link: "/"
+    link: "/",
   },
   {
     image: "/images/memes/meme.svg",
-    link: "/"
+    link: "/",
   },
   {
     image: "/images/memes/meme.svg",
-    link: "/"
+    link: "/",
   },
   {
     image: "/images/memes/meme.svg",
-    link: "/"
+    link: "/",
   },
   {
     image: "/images/memes/meme.svg",
-    link: "/"
-  }
+    link: "/",
+  },
 ];
 const Meme = () => {
   return (
-    <Box pos="relative"
-         className={"aos-init aos-animate"}
-         data-aos="fade-up"
-         id={"meme"}
+    <Box
+      pos="relative"
+      className={"aos-init aos-animate"}
+      data-aos="fade-up"
+      id={"meme"}
     >
       <Container
         maxW={"1300px"}
@@ -69,7 +70,7 @@ const Meme = () => {
         pt={{ base: "30px", md: "50px" }}
       >
         <HStack justify="center" alignItems="center" gap="24px">
-          <Box display={{base:"none", lg:"block"}}>
+          <Box display={{ base: "none", lg: "block" }}>
             <Image
               src={"/images/memes/meme.svg"}
               alt={"meme"}
@@ -106,7 +107,7 @@ const Meme = () => {
               taking this sport from hidden gem to mainstream fire.
             </Text>
           </Box>
-          <Box display={{base:"none", lg:"block"}}>
+          <Box display={{ base: "none", lg: "block" }}>
             <Image
               src={"/images/memes/meme.svg"}
               alt={"meme"}
@@ -116,8 +117,14 @@ const Meme = () => {
           </Box>
         </HStack>
         <Flex wrap={"wrap"} gap="24px" justifyContent="center">
-          {memeList.map((meme) => (
-            <Image src={meme.image} alt={"meme"} width={210} height={210} />
+          {memeList.map((meme, index) => (
+            <Image
+              key={index}
+              src={meme.image}
+              alt={"meme"}
+              width={210}
+              height={210}
+            />
           ))}
         </Flex>
       </Container>
