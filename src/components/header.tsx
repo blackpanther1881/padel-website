@@ -53,7 +53,7 @@ export default function Header() {
             <Link href="#rebel" px={4}>
               About
             </Link>
-            <Link href="#footer" px={4}>
+            <Link href="#roadmap" px={4}>
               Roadmap
             </Link>
             <Link href="#faq" px={4}>
