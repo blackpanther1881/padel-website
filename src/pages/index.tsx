@@ -13,13 +13,6 @@ import { TELEGRAM_LINK } from "../utils/config";
 const Home = () => {
   return (
     <Box height={"100vh"} position="relative">
-      <Box h={"48px"} p={4}>
-        <Flex justify="end" align="center">
-          <Link href={TELEGRAM_LINK} target="_blank">
-            <Button variant={"primary"}>Join the FAM</Button>
-          </Link>
-        </Flex>
-      </Box>
       <VStack
         justifyContent={"center"}
         height={"calc(100vh - 100px)"}
@@ -32,10 +25,13 @@ const Home = () => {
             width={220}
             height={220}
           />
-          <Text fontSize={"40px"} fontWeight={700} mt={"-20px"}>
+          <Text fontSize={"40px"} fontWeight={700} mt={"-20px"} mb={"20px"}>
             {" "}
             Coming Soon!!
           </Text>
+          <Link href={TELEGRAM_LINK} target="_blank">
+            <Button variant={"primary"}>Join the FAM</Button>
+          </Link>
         </Flex>
       </VStack>
     </Box>
